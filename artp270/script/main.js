@@ -25,7 +25,7 @@ function geo_success(position) {
 }
   
 function geo_error() {
-    $('#message').html('<b>Unable to get your location.You must allow us to know your location</b>')
+    $('#message').html('<b>Searching your location Hopefully result are coming</b>')
 }
 
 function update_middle(latitude, longitude){
