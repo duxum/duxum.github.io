@@ -11,7 +11,7 @@ $('.message .close')
 
 var geo_options = {
     enableHighAccuracy: true, 
-    maximumAge        : 300000000, 
+    maximumAge        : 300000000000000, 
     timeout           : 2700
   };
 
