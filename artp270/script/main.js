@@ -37,7 +37,7 @@ function update_middle(latitude, longitude){
 function request_weather_data(lat, long){
     $.ajax({
         
-            url : 'http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+long+'&appid=705452fb3e386b82a3c62f07127c7219',
+            url : 'https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+long+'&appid=705452fb3e386b82a3c62f07127c7219',
             type : 'GET',
             data : {
                 'numberOfWords' : 10
@@ -65,7 +65,7 @@ function third(data){
     humidity = data["main"]["humidity"]
     pressure = data["main"]["pressure"]
     icon = data['weather'][0]['icon']
-    imageURL = "http://openweathermap.org/img/w/"+icon+".png"
+    imageURL = "https://openweathermap.org/img/w/"+icon+".png"
     $("#icon").attr("src",imageURL);
     
 
@@ -103,7 +103,7 @@ $("#zipLook").click(function() {
     }
     $("#zipParent").attr("class","ui input focus")
     $.ajax({
-            url : 'http://api.openweathermap.org/data/2.5/weather?zip='+zip+',us&appid=705452fb3e386b82a3c62f07127c7219',
+            url : 'https://api.openweathermap.org/data/2.5/weather?zip='+zip+',us&appid=705452fb3e386b82a3c62f07127c7219',
             type : 'GET',
             data : {
                 'numberOfWords' : 10
