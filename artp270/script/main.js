@@ -10,9 +10,9 @@ $('.message .close')
 
 
 var geo_options = {
-    enableHighAccuracy: true, 
+    enableHighAccuracy: false, 
     maximumAge        : 300000000000000, 
-    timeout           : 2700
+    timeout           : 270000
   };
 
 
